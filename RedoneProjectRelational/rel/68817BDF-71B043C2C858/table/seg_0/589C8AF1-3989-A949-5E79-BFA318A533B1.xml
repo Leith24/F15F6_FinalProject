@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="589C8AF1-3989-A949-5E79-BFA318A533B1" name="F16F6_Contacts">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>B5CC2D2B-2A6C-36D4-9A16-DB528EEF67DA</generatorID>
+<notes>contacts or fyi reviewers</notes>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<ordsAlias>contacts</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contact_id" id="969A54CA-4B17-647E-0041-F64DB94F2239">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>81EE9B99-AADC-028D-A090-862BF29CD7F8</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RFE_id" id="DAF8DB41-D6A9-0DB4-96B9-256DB65EF1A0">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>73F22C89-7CBE-006B-37DA-36BE97BA2DE2</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37B35EBF-9A31-3813-8D80-4664580DEEDD" referredColumn="AE4252DB-6385-7A8D-B391-AC2D15B3DE45"/>
+</associations>
+</Column>
+<Column name="emp_id" id="B3A98FBA-82A4-3812-2ABF-C2C5A8EBBE40">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>9013C69E-4593-8D20-173E-28D3788EB40D</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00C5FECC-3C48-D7F5-F289-930C0F1DA768" referredColumn="76376FC3-138F-C9AB-EA25-13D54076A5FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C962CE4-8BE8-3340-EFBE-101AEC36111D" name="Contacts_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>9C0134B0-3DB7-EC63-5E53-12693A68FD33</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="969A54CA-4B17-647E-0041-F64DB94F2239"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D644E3B8-2B02-C560-E30E-1E2AEBA53BCF" name="Contacts_F15F6_RFE_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>016B6958-6271-85C6-B6EF-16E987EB21F1</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAF8DB41-D6A9-0DB4-96B9-256DB65EF1A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78322D6D-0F60-D50D-AD29-E3BEBD1BBCE0" name="Contacts_F15F6_emp_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>4E37EB97-4FCA-8877-8FB8-156CD1AE8EB2</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3A98FBA-82A4-3812-2ABF-C2C5A8EBBE40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

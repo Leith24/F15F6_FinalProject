@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DEB9D723-A86A-CE02-58B2-10FA46D1ACFE" name="Approvers">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>F6346A52-6D26-6BCC-4B60-1FA0318E9898</generatorID>
+<notes>approvers</notes>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="approver id" id="86E3CEAA-62B9-3426-9D44-CB299DC838EA">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>5C45EC84-0EE2-E6C6-4C63-DB967EA80100</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFE id" id="4A5D43D0-0925-C7B4-92B0-12299C6C12F7">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>CAB997B1-ABB4-D497-8A2A-60B67EF6BD0E</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<referedAttribute>68E69F1C-A926-0AE9-FF36-6393B7036A3A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp id" id="0351D582-7ACD-D473-2B72-2AFEC3A71978">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>054A7E84-04A2-267E-51F7-D59E08D53F44</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<referedAttribute>8F393B56-6B39-1D66-768C-744637202DEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="36ABCDA7-AD27-F435-96E6-F15E84FFCB78" name="Approvers PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>9CDAB3CC-311E-425A-F725-21FE40CBBFEF</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>86E3CEAA-62B9-3426-9D44-CB299DC838EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

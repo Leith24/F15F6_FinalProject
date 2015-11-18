@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B5CC2D2B-2A6C-36D4-9A16-DB528EEF67DA" name="Contacts">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>76F659C3-7D0A-45BD-C366-EA9BA42570FE</generatorID>
+<notes>contacts or fyi reviewers</notes>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contact id" id="81EE9B99-AADC-028D-A090-862BF29CD7F8">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>5B922420-27BD-0554-97E7-1079AEBCEC27</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFE id" id="73F22C89-7CBE-006B-37DA-36BE97BA2DE2">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>016B6958-6271-85C6-B6EF-16E987EB21F1</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<referedAttribute>68E69F1C-A926-0AE9-FF36-6393B7036A3A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp id" id="9013C69E-4593-8D20-173E-28D3788EB40D">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>4E37EB97-4FCA-8877-8FB8-156CD1AE8EB2</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<referedAttribute>8F393B56-6B39-1D66-768C-744637202DEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9C0134B0-3DB7-EC63-5E53-12693A68FD33" name="Contacts PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:27 UTC</createdTime>
+<generatorID>CB88BBC5-5B76-8ACC-B0A2-2771B891242F</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81EE9B99-AADC-028D-A090-862BF29CD7F8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

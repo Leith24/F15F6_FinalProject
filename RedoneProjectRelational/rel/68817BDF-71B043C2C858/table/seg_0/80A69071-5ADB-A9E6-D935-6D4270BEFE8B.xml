@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80A69071-5ADB-A9E6-D935-6D4270BEFE8B" name="F15F6_Approvers">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>DEB9D723-A86A-CE02-58B2-10FA46D1ACFE</generatorID>
+<notes>approvers</notes>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<ordsAlias>approvers</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="approver_id" id="EF60BE0E-F98A-F832-2322-1352151FBD0C">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>86E3CEAA-62B9-3426-9D44-CB299DC838EA</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RFE_id" id="33A2CD5D-A910-5C17-BA4F-8BFB0FEBC248">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>4A5D43D0-0925-C7B4-92B0-12299C6C12F7</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD7310A6-5C67-47E1-7810-CE0DF05BD8E4" referredColumn="AE4252DB-6385-7A8D-B391-AC2D15B3DE45"/>
+</associations>
+</Column>
+<Column name="emp_id" id="598553C9-E117-1FA9-5781-934BDFCDA28E">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>0351D582-7ACD-D473-2B72-2AFEC3A71978</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59E35F80-8BD8-8FA6-D863-C8C772B72BAB" referredColumn="76376FC3-138F-C9AB-EA25-13D54076A5FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85986596-EAD7-2285-CEAC-AE9667B7AEB5" name="Approvers_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>36ABCDA7-AD27-F435-96E6-F15E84FFCB78</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF60BE0E-F98A-F832-2322-1352151FBD0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="049B0DCB-8507-6E37-C7A4-B720A7E39E0A" name="Approvers_F15F6_RFE_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>CAB997B1-ABB4-D497-8A2A-60B67EF6BD0E</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33A2CD5D-A910-5C17-BA4F-8BFB0FEBC248"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9CB2CC36-24A3-BD76-607A-E170033CE3BC" name="Approvers_F15F6_emp_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-18 01:29:51 UTC</createdTime>
+<generatorID>054A7E84-04A2-267E-51F7-D59E08D53F44</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="598553C9-E117-1FA9-5781-934BDFCDA28E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

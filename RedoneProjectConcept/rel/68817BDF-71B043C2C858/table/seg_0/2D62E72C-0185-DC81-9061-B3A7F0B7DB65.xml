@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D62E72C-0185-DC81-9061-B3A7F0B7DB65" name="F15F6_Lab">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<generatorID>56135640-BA0F-E69C-35B0-2A05B9650FEF</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="1BA342EA-8025-2456-70FC-AA5EB1B56007">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<generatorID>6837CF05-44C8-4DE0-0ED5-BFA831FDAC7C</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2ADCA44B-D873-F7D8-E8C8-454A1323EFE7" name="F15F6_Lab_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<generatorID>9709FAE0-B4BF-E436-81E9-9DCA89F52F66</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BA342EA-8025-2456-70FC-AA5EB1B56007"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

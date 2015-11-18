@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B7364EB-D2EC-2BE5-140B-A5E6DA9BA9C6" name="Approvers">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<notes>approvers</notes>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Approver_id" id="74A71A5B-C81A-4ABA-FDDB-48D7ADCC1785">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:25:11 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RFE_id" id="45537D43-C173-D0E2-2833-2C1095F4B2EA">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27885D4F-2C2C-0F59-F7C1-48DF0B6B797F" referredColumn="1AC32B45-9542-5262-C12E-E02FCC6CDB8F"/>
+</associations>
+</Column>
+<Column name="emp_id" id="CCD7689B-01F4-F790-D24D-F50DB10E847A">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FF13D10-6918-DB3F-3125-7E9F7DC06F9A" referredColumn="71634B47-D8EB-9330-81AE-0B18135BCE2C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48F9E387-5CF6-2657-9DDD-96DC5B1EF91F" name="Approvers_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74A71A5B-C81A-4ABA-FDDB-48D7ADCC1785"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75F92C26-B418-15F3-3472-DA08A2E9CC02" name="FK_ASS_18">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<generatorID>46F54535-04F9-9696-29EE-B77D8E54490C</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45537D43-C173-D0E2-2833-2C1095F4B2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2634DD66-DD7F-5F65-5C8F-25672B364B7C" name="FK_ASS_19">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-16 05:23:55 UTC</createdTime>
+<generatorID>46F54535-04F9-9696-29EE-B77D8E54490C</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCD7689B-01F4-F790-D24D-F50DB10E847A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

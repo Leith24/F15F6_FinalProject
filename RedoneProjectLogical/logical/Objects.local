@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="DEB9D723-A86A-CE02-58B2-10FA46D1ACFE" name="Approvers" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B5CC2D2B-2A6C-36D4-9A16-DB528EEF67DA" name="Contacts" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7C8C3F83-3B11-8894-97C2-8FBC559DDFA6" name="F15F6 Authoriz" seqName="seg_0"/>
+   <object objectType="Entity" objectID="12B6D0A9-D95A-B9F5-05A8-04FAF2DCFEB1" name="F15F6 Comments" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B4E7B570-2A49-AFD6-D1DE-A472FD8557C8" name="F15F6 Doc" seqName="seg_0"/>
+   <object objectType="Entity" objectID="CF6047A5-BA98-697E-99FF-940E78A34443" name="F15F6 History" seqName="seg_0"/>
+   <object objectType="Entity" objectID="57A23779-5CE1-58D0-C8FA-A9888375B2E4" name="F15F6 Lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="414FD9D8-46FD-397B-0094-C186286B6727" name="F15F6 RFE" seqName="seg_0"/>
+   <object objectType="Entity" objectID="75795215-FDF7-B4BF-2E44-D43B577DE7EF" name="F15F6 Status" seqName="seg_0"/>
+   <object objectType="Entity" objectID="775E8A72-ED8B-EAC4-620C-119C17466AA8" name="F15F6 Tasks" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A0BD3471-5B20-33A1-7FCD-5F6FFE0C2552" name="F15F6 emp" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EBCBA3A3-A1D8-1AF3-D90C-EDCE48171223" name="F15F6_Authoriz_F15F6_emp_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EA2DAAD9-D2C1-30B8-9E0C-8D2B62A8DA0D" name="F15F6_Comments_F15F6_RFE_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="17F6E27B-C9F5-9F32-5539-C24B98919506" name="F15F6_Comments_F15F6_emp_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2D853FD7-E367-BA2A-4693-8C180CD53106" name="F15F6_Doc_F15F6_RFE_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="61933F67-254D-8ED6-0E53-B4C54BDFECF7" name="F15F6_History_F15F6_RFE_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BC745130-1C96-9822-E376-F7A69D9D2068" name="F15F6_RFE_F15F6_Status_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3E056AE2-3E86-A52C-A0F9-011E22E4F862" name="F15F6_RFE_F15F6_Tasks_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="723A42CC-22CE-FBFA-4830-CE69806907E7" name="F15F6_RFE_F15F6_emp_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2B798E73-86E4-24C9-CD01-CA9F2B07EF22" name="F15F6_emp_F15F6_Authoriz_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B2B3A216-9083-A63B-A6AA-E20F9B115109" name="F15F6_emp_F15F6_Lab_FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CAB997B1-ABB4-D497-8A2A-60B67EF6BD0E" name="FK_ASS_1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="054A7E84-04A2-267E-51F7-D59E08D53F44" name="FK_ASS_2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="016B6958-6271-85C6-B6EF-16E987EB21F1" name="FK_ASS_3" seqName="seg_0"/>
+   <object objectType="Relation" objectID="4E37EB97-4FCA-8877-8FB8-156CD1AE8EB2" name="FK_ASS_4" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

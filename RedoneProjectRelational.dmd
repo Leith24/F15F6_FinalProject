@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RedoneProjectRelational" id="AD91E06C-70A4-189A-D5B1-9203EAD60E29" version="3.5">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-02 21:58:30 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AD91E06C-70A4-189A-D5B1-9203EAD60E29</designId>
+</OSDM_Design>

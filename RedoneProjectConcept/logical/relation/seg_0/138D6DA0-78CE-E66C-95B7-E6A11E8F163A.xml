@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="requestor" directorySegmentName="seg_0" id="138D6DA0-78CE-E66C-95B7-E6A11E8F163A">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-02 22:23:22 UTC</createdTime>
+<notes>requestor </notes>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<sourcePk>6A198CAA-4E58-E285-7F47-68F0B99DE158</sourcePk>
+<targetPk>728FB239-6761-6D11-8755-F6F2265FB647</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F148D557-63FE-0C06-3197-7E5B820EEB00</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D9DA0C0E-BBE6-2AC9-47F2-7A3D26970570</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

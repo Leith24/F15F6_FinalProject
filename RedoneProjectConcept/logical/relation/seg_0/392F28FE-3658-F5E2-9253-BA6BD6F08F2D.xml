@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="R7" directorySegmentName="seg_0" id="392F28FE-3658-F5E2-9253-BA6BD6F08F2D">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-02 22:32:25 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<sourcePk>6A198CAA-4E58-E285-7F47-68F0B99DE158</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F148D557-63FE-0C06-3197-7E5B820EEB00</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E8539D66-2C96-FDC8-8B0F-AC0AFCAACCB0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
