@@ -1,0 +1,28 @@
+# Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
+conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_zdb248' 'orcl_zdb248' 'rdf_mode' 'F6';
+
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 1, CATEGORY_ID : 1, PRODUCT_CODE : 'STRAT', PRODUCT_NAME : 'FENDER STRATOCASTER', LIST_PRICE : 699.00, DISCOUNT_PERCENT : 30.00, DATE_ADDED : '2011-10-30'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 2, CATEGORY_ID : 1, PRODUCT_CODE : 'LES_PAUL', PRODUCT_NAME : 'GIBSON LES PAUL', LIST_PRICE : 1199.00, DISCOUNT_PERCENT : 30.00, DATE_ADDED : '2011-12-05'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 3, CATEGORY_ID : 1, PRODUCT_CODE : 'SG', PRODUCT_NAME : 'GIBSON SG', LIST_PRICE : 2517.00, DISCOUNT_PERCENT : 52.00, DATE_ADDED : '2012-02-04'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 4, CATEGORY_ID : 1, PRODUCT_CODE : 'FG700S', PRODUCT_NAME : 'YAHAMA FG700S', LIST_PRICE : 489.99, DISCOUNT_PERCENT : 38.00, DATE_ADDED : '2012-06-01'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 5, CATEGORY_ID : 1, PRODUCT_CODE : 'WASHBURN', PRODUCT_NAME : 'WASHBURN D10S', LIST_PRICE : 299.00, DISCOUNT_PERCENT : 0.00, DATE_ADDED : 2012-07-30})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 6, CATEGORY_ID : 1, PRODUCT_CODE : 'RODRIGUEZ', PRODUCT_NAME : 'RODRIGUEZ CABALLERO 11', LIST_PRICE : 415.00, DISCOUNT_PERCENT : 39.00, DATE_ADDED : '2012-07-30'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 7, CATEGORY_ID : 2, PRODUCT_CODE : 'PERCISION', PRODUCT_NAME : 'FENDER PERCISION', LIST_PRICE : 799.00, DISCOUNT_PERCENT : 30.00, DATE_ADDED : '2012-06-01'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 8, CATEGORY_ID : 2, PRODUCT_CODE : 'HOFNER', PRODUCT_NAME : 'HOFNER ICON', LIST_PRICE : 499.99, DISCOUNT_PERCENT : 25.00, DATE_ADDED : '2012-07-30'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 9, CATEGORY_ID : 3, PRODUCT_CODE : 'LUDWIG', PRODUCT_NAME : 'LUDWIG 5-PIECE DRUM SET WITH CYMBALS', LIST_PRICE : 699.99, DISCOUNT_PERCENT : 30.00, DATE_ADDED : '2012-07-30'})"
+Neo4j on conn "CREATE (:products { PRODUCT_ID : 10, CATEGORY_ID : 3, PRODUCT_CODE : 'TAMA', PRODUCT_NAME : 'TAMA 5-PIECE DRUM SET WITH CYMBALS', LIST_PRICE : 799.99, DISCOUNT_PERCENT : 15.00, DATE_ADDED : '2012-07-30'})"
+
+Neo4j on conn "CREATE (:categories { CATEGORY_ID : 1, CATEGORY_NAME : 'GUITARS' })"
+Neo4j on conn "CREATE (:categories { CATEGORY_ID : 2, CATEGORY_NAME : 'BASSES' })"
+Neo4j on conn "CREATE (:categories { CATEGORY_ID : 3, CATEGORY_NAME : 'DRUMS' })"
+Neo4j on conn "CREATE (:categories { CATEGORY_ID : 4, CATEGORY_NAME : 'KEYBOARDS' })"
+
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 1 AND b.category_id = 1 CREATE (a)<-[:prod]-(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 2 AND b.category_id = 2 CREATE (a)<-[:prod]-(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 3 AND b.category_id = 3 CREATE (a)<-[:prod]-(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 4 AND b.category_id = 4 CREATE (a)<-[:prod]-(b)"
+
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 1 AND b.category_id = 1 CREATE (a)-[:categ]->(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 2 AND b.category_id = 2 CREATE (a)-[:categ]->(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 3 AND b.category_id = 3 CREATE (a)-[:categ]->(b)"
+Neo4j on conn "MATCH (a:products),(b:categories) WHERE a.category_id = 4 AND b.category_id = 4 CREATE (a)-[:categ]->(b)"
