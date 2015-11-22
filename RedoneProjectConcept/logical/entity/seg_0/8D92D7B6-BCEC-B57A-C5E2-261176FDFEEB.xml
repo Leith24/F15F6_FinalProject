@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D92D7B6-BCEC-B57A-C5E2-261176FDFEEB" name="F15F6_Role_Code">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:38:16 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="role_code_id" id="6F7E03BF-A11D-B438-0B51-FD9373E00B09">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:38:29 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="FD661969-A65C-40DE-C429-146F7AA91112">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:38:55 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Description" id="048A6D7F-FBC1-5400-0E8E-EA32AD589CE6">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:39:06 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB58ABD2-EA0A-4C7F-C508-14C8C257D542" name="F15F6_Role_Code PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:38:53 UTC</createdTime>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F7E03BF-A11D-B438-0B51-FD9373E00B09</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

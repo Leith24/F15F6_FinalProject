@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56D6151C-41D8-73C3-86B0-434C62ECCC4E" name="F15F6 Tasks">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>502FC921-4CE6-6B02-212A-ED3CC13799B9</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="task id" id="DC84212A-042A-4E53-591C-A3C3F379B5D9">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>7874DC2E-C6B6-8A9C-B770-127D51E6CC31</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective date" id="D6872784-ADA0-29B2-E15B-11A8CB2227CB">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>969EC147-E028-1DC3-542C-56942DEDF56E</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task abbrev" id="D16E5E50-30AA-213C-3921-6D46A01FD05B">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>02C6B0D3-C4B4-5690-E77A-4ED16744F810</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task desc" id="17275177-0F91-5FCC-205A-FD0D3FBAA961">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>79F5EC8C-1ED3-28DF-8F55-2C1358738732</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2DF15A46-4C5A-AE1B-102A-AA9007D1FA96" name="F15F6 Tasks PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>02F1AD61-8E4C-5DD3-F720-2779AEA6EF72</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC84212A-042A-4E53-591C-A3C3F379B5D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -41,29 +41,15 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="emp_id" id="6389EFED-C29A-882A-2F66-378F46912885">
-<createdBy>gavin</createdBy>
-<createdTime>2015-11-02 22:16:00 UTC</createdTime>
-<generatorID>4A2FA346-B1E9-F841-A930-8259C34B5C5D</generatorID>
-<ownerDesignName>RedoneProjectConcept</ownerDesignName>
-<engineerTo>
-<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>6F159EBB-45D6-513D-2F8A-0537E9F8ADB3</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E793956C-372E-3B4E-8F59-5135AC87D619" name="F16F6_Authoriz PK">
 <createdBy>gavin</createdBy>
 <createdTime>2015-11-02 22:13:29 UTC</createdTime>
 <ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

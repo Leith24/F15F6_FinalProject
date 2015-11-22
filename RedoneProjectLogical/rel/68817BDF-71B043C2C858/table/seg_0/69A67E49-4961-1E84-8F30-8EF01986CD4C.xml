@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69A67E49-4961-1E84-8F30-8EF01986CD4C" name="F15F6_Doc">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>2F18CD45-50B8-9D3D-5F3B-4471499B4766</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="CEB82BAE-E5B8-7D9F-D2AF-28BE68B3D0E6">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>63E1A260-3ECD-E91D-F4BA-9E735C6B0C20</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F6_RFE_RFE_id" id="4E95E9E9-E6E2-02EE-97BA-4E554764F8E3">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>0A37E054-F3BF-944C-24BB-70FD8D431107</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE1D6434-5488-640C-5874-2A0D9443811A" referredColumn="65116CAB-BAF8-F165-51E6-40B683FF978E"/>
+</associations>
+</Column>
+<Column name="filename" id="D926E5A6-6F5C-E4D3-F7B4-534C8FAFE9CF">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>23BC977B-2D85-A64E-98A3-6F0F2C7644F7</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="46A76FAF-2325-B63C-BA3A-8E6CB2695640">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>336E381E-234F-6F86-E048-A8B449A128E0</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="C1FE54E0-0E61-E686-E13A-C614C82FD849">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>CA1A9320-26D8-CE91-9964-70C47A329C57</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_blob" id="38E0A7F1-B2D1-7F12-9469-0E7CB5A4BC5D">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>03E529F4-4C07-6299-3DAE-F8AEBFF8A14C</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="F5DE94C4-86C7-4D84-6017-145C0E860DF5">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>B788979B-4E97-19D5-6DD1-DD40E210341B</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="80205E29-3688-09D1-2B3D-BE731A615228">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>07382D1A-B7C3-1B93-BE2D-1D8B3FE95071</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3325337B-3218-20EF-812B-4E1C37544EE5" name="F15F6_Doc_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>B371A6E7-DE47-B019-7C20-1D429FA875EE</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEB82BAE-E5B8-7D9F-D2AF-28BE68B3D0E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B198ABC2-8502-2D4C-95E5-DF79539EA2F2" name="F15F6_Doc_F15F6_RFE_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:16:08 UTC</createdTime>
+<generatorID>222D2D76-D0A6-88BD-DCE5-6F4FF4B15B84</generatorID>
+<ownerDesignName>RedoneProjectLogical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E95E9E9-E6E2-02EE-97BA-4E554764F8E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

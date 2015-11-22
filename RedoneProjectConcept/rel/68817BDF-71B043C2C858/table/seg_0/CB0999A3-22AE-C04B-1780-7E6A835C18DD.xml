@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB0999A3-22AE-C04B-1780-7E6A835C18DD" name="F15F6_Comments">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>A80AA778-5C3F-65E0-AC2F-973680878A61</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Comment_id" id="F5D0DC6E-0525-37F3-5102-E4685FD47947">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>B28B2F62-C948-C480-8E21-7678DE901AE7</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F6_RFE_RFE_id" id="DF62DC3D-87C6-3522-158F-8677A37562AC">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>C617334E-4F6C-A770-CB5E-8C3041E945B7</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDEA68EC-E822-1D49-112A-193AFB5CA6C2" referredColumn="F286F89E-7863-D9DE-99E5-531619A1E51A"/>
+</associations>
+</Column>
+<Column name="F15F6_emp_emp_id" id="F6EABBA8-FE44-34DF-903D-C812253677BC">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>E55E7141-2128-D082-4CD0-64AD0D89677A</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7651544B-6755-31B2-6E8A-E236C99FCC5E" referredColumn="3399EB0C-A983-01E1-0B0B-57C7E6FB0F9F"/>
+</associations>
+</Column>
+<Column name="entered_by_emp" id="7DD835BB-3009-1E6C-36FC-0134213E6A74">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>418B2347-D53E-6402-28DC-31562D2FC3C4</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment_entry_date" id="97740372-50AC-4DF1-F0E6-26F407FE2100">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>F95E4084-E992-7043-3293-53EFD880C57C</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="4D552A44-DC02-030C-BA35-34280744C729">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>C19D25E5-A96F-303B-4C3D-B7381C10589C</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F473842B-A629-8DDF-024E-277CDDFBB6E6" name="F15F6_Comments_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>4FC5C1DC-682D-447F-5942-32298ECF171E</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5D0DC6E-0525-37F3-5102-E4685FD47947"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CA04BC3-AA77-FD3E-07C6-586542E25D5B" name="F15F6_Comments_F15F6_RFE_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>89717DA7-7F5E-4D2C-57E6-175EF5E4FB70</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF62DC3D-87C6-3522-158F-8677A37562AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DE5475C-37AD-69AA-176F-8F95F421A83A" name="F15F6_Comments_F15F6_emp_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 14:33:07 UTC</createdTime>
+<generatorID>25B0C5A8-021A-C6A6-BD70-C33CEFDDF944</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6EABBA8-FE44-34DF-903D-C812253677BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

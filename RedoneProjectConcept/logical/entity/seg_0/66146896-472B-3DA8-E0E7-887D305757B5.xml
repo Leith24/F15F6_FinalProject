@@ -59,8 +59,9 @@
 <createdBy>gavin</createdBy>
 <createdTime>2015-11-02 22:29:37 UTC</createdTime>
 <ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

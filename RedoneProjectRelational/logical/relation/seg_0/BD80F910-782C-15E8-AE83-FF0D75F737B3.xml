@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="F15F6_Contact_F15F6_Role_Code_FK" directorySegmentName="seg_0" id="BD80F910-782C-15E8-AE83-FF0D75F737B3">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:19:28 UTC</createdTime>
+<generatorID>B37BA32B-06F3-58C8-8656-1F2D5B37F975</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<sourcePk>CCA3D038-8E47-151A-B398-5C9805539C22</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BAA1D11B-477B-CCD6-03B5-8151D167FC72</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>656BF4A0-191F-6F19-33EE-D601D958ACDE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

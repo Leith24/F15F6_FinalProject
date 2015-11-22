@@ -27,21 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="auth_id" id="4F2F97D5-3B45-05B2-EFBF-A2FE8D055F14">
-<createdBy>gavin</createdBy>
-<createdTime>2015-11-02 22:16:10 UTC</createdTime>
-<generatorID>4A2FA346-B1E9-F841-A930-8259C34B5C5D</generatorID>
-<ownerDesignName>RedoneProjectConcept</ownerDesignName>
-<engineerTo>
-<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>B363FE90-7D66-BC6F-64C1-34C91DBDC917</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="lab_id" id="39B5E842-6155-245A-4DD6-8EDBE0D21FDC">
 <createdBy>gavin</createdBy>
 <createdTime>2015-11-02 22:21:09 UTC</createdTime>
@@ -200,14 +185,30 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="auth_id" id="292844EC-B248-8CF6-E49C-F54AAD765089">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-21 17:14:27 UTC</createdTime>
+<generatorID>E21689B3-F528-9765-DD1D-EA091F58380F</generatorID>
+<ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<engineerTo>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B363FE90-7D66-BC6F-64C1-34C91DBDC917</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="728FB239-6761-6D11-8755-F6F2265FB647" name="F15F6_emp PK">
 <createdBy>gavin</createdBy>
 <createdTime>2015-11-02 22:05:39 UTC</createdTime>
 <ownerDesignName>RedoneProjectConcept</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="true"/>
+<item key="68817BDF-B807-5B29-5BF4-71B043C2C858" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

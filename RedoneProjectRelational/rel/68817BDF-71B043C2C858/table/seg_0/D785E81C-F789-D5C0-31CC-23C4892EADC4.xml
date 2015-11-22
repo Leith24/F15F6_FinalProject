@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D785E81C-F789-D5C0-31CC-23C4892EADC4" name="F15F6_Contact">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>656BF4A0-191F-6F19-33EE-D601D958ACDE</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contact_id" id="9707A473-B983-27FA-23AE-E6EAF4278572">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>643A8634-FA3F-B454-E04C-EAFE94726074</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15F6_RFE_RFE_id" id="B85FC359-7D65-C1C9-8796-D08033CBFA2D">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>D070D788-7373-5761-A6F3-ED6975FF62CF</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0CFFB1D-96C0-BCC8-74DB-740B49714E57" referredColumn="3F7C225E-4CEA-6E70-E941-CA6CC2921CB0"/>
+</associations>
+</Column>
+<Column name="F15F6_emp_emp_id" id="1EE749EE-FF66-B7F5-FDEF-52371EBC2494">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>F4055813-0820-19D9-7D02-D990BFB91189</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9ED26152-4A1C-2E67-1D11-FB319B480545" referredColumn="4B19937F-5F50-FD83-6659-243AAAB52489"/>
+</associations>
+</Column>
+<Column name="F15F6_Role_Code_role_code_id" id="A11E5811-209B-3C84-8311-BF57C2AD94F4">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>0C31CA9A-7C84-4B36-FD15-5C1DB93AC7FF</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8DD996B-F075-BF0C-BE67-81FC792D95F4" referredColumn="635CC723-0F7A-0E29-42BC-BEFF99CE32C9"/>
+</associations>
+</Column>
+<Column name="effective_date" id="440A2BF0-CFBB-9A0D-3472-03D63C2425A6">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>56B3799A-94B1-C9EE-AE2C-28A729275818</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="ACF17704-128C-CB0B-78DB-81CF4CB0DC25">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>D084B0FA-C51A-D303-51DB-C4A0F186062C</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="814C87A8-F689-1DAC-7144-44C8CA7577DF" name="F15F6_Contact_PK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>DDB51606-F880-35ED-3EB6-0527B1ACFA50</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9707A473-B983-27FA-23AE-E6EAF4278572"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F838934-0B5A-A1AA-0912-528D13A2A1C1" name="F15F6_Contact_F15F6_RFE_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>7024024D-34E8-3CF0-E1C0-8AD1B40E9047</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B85FC359-7D65-C1C9-8796-D08033CBFA2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FC6E2BF-C3FA-68BD-AB8B-60D4D1A57C56" name="F15F6_Contact_F15F6_Role_Code_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>BD80F910-782C-15E8-AE83-FF0D75F737B3</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A11E5811-209B-3C84-8311-BF57C2AD94F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F22720F-9A9E-842A-C149-3DD3DDFFF7EC" name="F15F6_Contact_F15F6_emp_FK">
+<createdBy>gavin</createdBy>
+<createdTime>2015-11-22 16:20:01 UTC</createdTime>
+<generatorID>6EE59D0A-1F04-F6B5-9EEB-F6F64EDF2E0C</generatorID>
+<ownerDesignName>RedoneProjectRelational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EE749EE-FF66-B7F5-FDEF-52371EBC2494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
