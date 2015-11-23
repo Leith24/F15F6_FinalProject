@@ -7,6 +7,7 @@ whenever sqlerror exit sql.sqlcode rollback
 -- You should run the script connected to SQL*Plus as the Oracle user
 -- APEX_050000 or as the owner (parsing schema) of the application.
 --
+--
 -- NOTE: Calls to apex_application_install override the defaults below.
 --
 --------------------------------------------------------------------------------
