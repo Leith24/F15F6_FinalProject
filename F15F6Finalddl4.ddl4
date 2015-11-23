@@ -5,14 +5,18 @@ drop view F15F6_Sys_Admin_View;
 drop view F15F6_Chairperson_view;
 drop view F15F6_RFE_view;
 drop view F15F6_Doc_view;
-drop view F15F6_Tasks_view;
-drop view F15F6_Lab_view;
+drop view F15F6_Task_view;
+drop view R8_view;
+drop view F15F6_Comment_view;
+drop view F15F6_History_view;
+drop view F15F6_Contact_view;
+
 
 create view F15F6_emp_view as
 SELECT 
     emp_id,
-    auth_id,
-    lab_id,
+    F15F6_lab_id,
+    F15F6_auth_id,
     name,
     email,
     office,
@@ -32,8 +36,8 @@ create or replace TRIGGER F15F6_emp_trigger
 BEGIN
     insert into F15F6_emp( 
 		emp_id,
-    	auth_id,
-    	lab_id,
+        F15F6_lab_id,
+    	F15F6_auth_id,
     	name,
 		email,
 		office,
@@ -47,27 +51,29 @@ BEGIN
 		type)
 		 VALUES ( 
 		:NEW.emp_id,
-    	:NEW.auth_id,
-    	:NEW.lab_id,
+        :NEW.F15F6_lab_id,
+    	:NEW.F15F6_auth_id,
     	:NEW.name,
 		:NEW.email,
 		:NEW.office,
 		:NEW.phone,
 		:NEW.status,
 		:NEW.eff_date,
-		:NEW.admin_flag,
-		:NEW.dir_flag,
-		:NEW.exec_dir_flag,
-		:NEW.chair_flag,
+		'N',
+		'N',
+		'N',
+		'N',
 		'Employee') ;
 END;
 /
 
+
+
 create view F15F6_Lab_Dir_view as
 SELECT 
     emp_id,
-    auth_id,
-    lab_id,
+    F15F6_lab_id,
+    F15F6_auth_id,
     name,
     email,
     office,
@@ -82,13 +88,13 @@ SELECT
 FROM F15F6_emp where type = 'Lab Director' ;
 
 create or replace TRIGGER F15F6_lab_dir_trigger
-     INSTEAD OF insert ON F15F6_Lab+Dir_view
+     INSTEAD OF insert ON F15F6_Lab_Dir_view
      FOR EACH ROW
 BEGIN
     insert into F15F6_emp( 
 		emp_id,
-    	auth_id,
-    	lab_id,
+        F15F6_lab_id,
+    	F15F6_auth_id,
     	name,
 		email,
 		office,
@@ -102,18 +108,18 @@ BEGIN
 		type)
 		 VALUES ( 
 		:NEW.emp_id,
-    	:NEW.auth_id,
-    	:NEW.lab_id,
+        :NEW.F15F6_lab_id,
+    	:NEW.F15F6_auth_id,
     	:NEW.name,
 		:NEW.email,
 		:NEW.office,
 		:NEW.phone,
 		:NEW.status,
 		:NEW.eff_date,
-		:NEW.admin_flag,
-		1,
-		:NEW.exec_dir_flag,
-		:NEW.chair_flag,
+		'N',
+		'Y',
+		'N',
+		'N',
 		'Lab Director') ;
 END;
 /
@@ -121,8 +127,8 @@ END;
 create view F15F6_Exec_Direc_view as
 SELECT 
     emp_id,
-    auth_id,
-    lab_id,
+    F15F6_lab_id,
+    F15F6_auth_id,
     name,
     email,
     office,
@@ -142,8 +148,8 @@ create or replace TRIGGER F15F6_exec_dir_trigger
 BEGIN
     insert into F15F6_emp( 
 		emp_id,
-    	auth_id,
-    	lab_id,
+        F15F6_lab_id,
+    	F15F6_auth_id,
     	name,
 		email,
 		office,
@@ -157,18 +163,18 @@ BEGIN
 		type)
 		 VALUES ( 
 		:NEW.emp_id,
-    	:NEW.auth_id,
-    	:NEW.lab_id,
+        :NEW.F15F6_lab_id,
+    	:NEW.F15F6_auth_id,
     	:NEW.name,
 		:NEW.email,
 		:NEW.office,
 		:NEW.phone,
 		:NEW.status,
 		:NEW.eff_date,
-		:NEW.admin_flag,
-		:NEW.dir_flag,
-		1,
-		:NEW.chair_flag,
+		'N',
+		'N',
+		'Y',
+		'N',
 		'Executive Director') ;
 END;
 /
@@ -176,8 +182,8 @@ END;
 create view F15F6_Sys_Admin_view as
 SELECT 
     emp_id,
-    auth_id,
-    lab_id,
+    F15F6_lab_id,
+    F15F6_auth_id,
     name,
     email,
     office,
@@ -197,8 +203,8 @@ create or replace TRIGGER F15F6_sys_admin_trigger
 BEGIN
     insert into F15F6_emp( 
 		emp_id,
-    	auth_id,
-    	lab_id,
+        F15F6_lab_id,
+    	F15F6_auth_id,
     	name,
 		email,
 		office,
@@ -212,18 +218,18 @@ BEGIN
 		type)
 		 VALUES ( 
 		:NEW.emp_id,
-    	:NEW.auth_id,
-    	:NEW.lab_id,
+        :NEW.F15F6_lab_id,
+    	:NEW.F15F6_auth_id,
     	:NEW.name,
 		:NEW.email,
 		:NEW.office,
 		:NEW.phone,
 		:NEW.status,
 		:NEW.eff_date,
-		1,
-		:NEW.dir_flag,
-		:NEW.exec_dir_flag,
-		:NEW.chair_flag,
+		'Y',
+		'N',
+		'N',
+		'N',
 		'System Administrator') ;
 END;
 /
@@ -231,8 +237,8 @@ END;
 create view F15F6_Chairperson_view as
 SELECT 
     emp_id,
-    auth_id,
-    lab_id,
+    F15F6_lab_id,
+    F15F6_auth_id,
     name,
     email,
     office,
@@ -252,8 +258,8 @@ create or replace TRIGGER F15F6_Chairperson_trigger
 BEGIN
     insert into F15F6_emp( 
 		emp_id,
-    	auth_id,
-    	lab_id,
+        F15F6_lab_id,
+    	F15F6_auth_id,
     	name,
 		email,
 		office,
@@ -267,18 +273,297 @@ BEGIN
 		type)
 		 VALUES ( 
 		:NEW.emp_id,
-    	:NEW.auth_id,
-    	:NEW.lab_id,
+        :NEW.F15F6_lab_id,
+    	:NEW.F15F6_auth_id,
     	:NEW.name,
 		:NEW.email,
 		:NEW.office,
 		:NEW.phone,
 		:NEW.status,
 		:NEW.eff_date,
-		:NEW.admin_flag,
-		:NEW.dir_flag,
-		:NEW.exec_dir_flag,
-		1,
+		'N',
+		'N',
+		'N',
+		'Y',
 		'Chairperson') ;
 END;
 /
+
+drop sequence RFE_rfe_id;
+create sequence RFE_rfe_id
+start with 100
+increment by 1
+nomaxvalue;
+
+create view F15F6_RFE_view as
+SELECT
+	RFE_id,
+	F15F6_emp_id,
+	F15F6_status_id,
+	explanation,
+	alt_protections,
+	approval_review_date
+FROM F15F6_RFE;
+
+create or replace TRIGGER F15F6_RFE_trigger
+	INSTEAD OF insert ON F15F6_RFE_view
+    DECLARE
+        rfeid NUMBER;
+BEGIN
+    rfeid := RFE_rfe_id.nextval;
+	insert into F15F6_RFE(
+	RFE_id,
+	F15F6_emp_id,
+	F15F6_status_id,
+	explanation,
+	alt_protections,
+	approval_review_date)
+	VALUES(
+	rfeid,
+	V('P1_LAB_EMP'),
+	V('P3_F15F6_STATUS_ID'),
+	:NEW.explanation,
+	:NEW.alt_protections,
+	:NEW.approval_review_date);
+END;
+/
+
+
+drop sequence doc_seq_id;
+create sequence doc_seq_id
+start with 100
+increment by 1
+nomaxvalue;
+
+create view F15F6_Doc_view as
+SELECT
+	doc_id,
+	F15F6_RFE_RFE_id,
+	filename,
+	file_mimetype,
+	file_charset,
+	file_blob,
+	file_comments,
+	tags
+FROM F15F6_Doc;
+
+create or replace TRIGGER F15F6_Doc_trigger
+	INSTEAD OF insert ON F15F6_Doc_view
+    DECLARE
+        doc NUMBER;
+BEGIN
+    doc := doc_seq_id.nextval;
+	insert into F15F6_Doc(
+	doc_id,
+	F15F6_RFE_RFE_id,
+	filename,
+	file_mimetype,
+	file_charset,
+	file_blob,
+	file_comments,
+	tags)
+	VALUES(
+	doc,
+	V('P9_F15F6_RFE_RFE_ID'),
+	:NEW.filename,
+	:NEW.file_mimetype,
+	:NEW.file_charset,
+	:NEW.file_blob,
+	:NEW.file_comments,
+	:new.tags);
+END;
+/
+
+drop sequence task_seq_id;
+create sequence task_seq_id
+start with 100
+increment by 1
+nomaxvalue;
+
+create view F15F6_Task_view as
+SELECT
+    task_id,
+    effective_date,
+    task_abbrev,
+    task_desc
+FROM F15F6_Tasks;
+
+create or replace TRIGGER F15F6_Task_trigger
+    INSTEAD OF insert ON F15F6_Task_view
+    DECLARE
+        task NUMBER;
+BEGIN
+    task := task_seq_id.nextval;
+    insert into F15F6_Tasks(
+        task_id,
+        effective_date,
+        task_abbrev,
+        task_desc)
+        VALUES (
+        task,
+        :NEW.effective_date,
+        :NEW.task_abbrev,
+        :NEW.task_desc);
+END;
+/
+
+drop sequence r8_seq;
+create sequence r8_seq
+start with 101
+increment by 1
+nomaxvalue;
+
+create view R8_view as
+SELECT
+    taskrfe_id,
+    F15F6_Tasks_task_id,
+    F15F6_RFE_RFE_id
+FROM R8;
+
+create or replace TRIGGER r8_trigger
+    INSTEAD OF insert ON R8_view
+    DECLARE
+        rid NUMBER;
+BEGIN
+    rid := r8_seq.nextval;
+    insert into R8(
+    taskrfe_id,
+    F15F6_Tasks_task_id,
+    F15F6_RFE_RFE_id)
+    VALUES (
+    rid,
+    V('P14_F15F6_TASK_ID'),
+    V('P14_F15F6_RFE_ID'));
+END;
+/
+
+drop sequence comment_seq;
+create sequence comment_seq
+start with 101
+increment by 1
+nomaxvalue;
+
+create view F15F6_Comment_view as
+SELECT
+    Comment_id,
+    F15F6_RFE_RFE_id,
+    F15F6_emp_emp_id,
+    entered_by_emp,
+    comment_entry_date,
+    comments
+FROM F15F6_Comments;
+
+create or replace TRIGGER F15F6_Comment_trigger
+    INSTEAD OF insert ON F15F6_Comment_view
+    DECLARE
+        cid NUMBER;
+BEGIN
+    cid := comment_seq.nextval;
+    insert into F15F6_Comments(
+    Comment_id,
+    F15F6_RFE_RFE_id,
+    F15F6_emp_emp_id,
+    entered_by_emp,
+    comment_entry_date,
+    comments)
+    VALUES(
+    cid,
+    V('P16_F15F6_RFE_RFE_ID'),
+    V('P1_LAB_EMP'),
+     V('P1_LAB_EMP'),
+    :NEW.comment_entry_date,
+    :NEW.comments);
+END;
+/
+
+drop sequence history_seq;
+create sequence history_seq
+start with 100
+increment by 1
+nomaxvalue;
+
+create view F15F6_History_view as 
+SELECT
+    hist_id,
+    F15F6_RFE_RFE_id,
+    effective_date,
+    entered_by_emp
+FROM F15F6_History;
+
+create or replace TRIGGER F15F6_History_trigger
+    BEFORE UPDATE ON F15F6_RFE
+    DECLARE
+        histid NUMBER;
+BEGIN
+    histid := history_seq.nextval;
+    insert into F15F6_History(
+    hist_id,
+    F15F6_RFE_RFE_id,
+    effective_date,
+    entered_by_emp)
+    VALUES(
+    histid,
+    V('P17_SELECT_RFE'),
+    to_date(sysdate),
+    V('P1_LAB_EMP'));
+END;
+/
+
+create or replace TRIGGER F15F6_History_trigger_two
+    AFTER INSERT ON F15F6_RFE
+    DECLARE
+        hisid NUMBER;
+BEGIN
+    hisid := history_seq.nextval;
+    insert into F15F6_History(
+    hist_id,
+    F15F6_RFE_RFE_id,
+    effective_date,
+    entered_by_emp)
+    VALUES(
+    histid,
+    :NEW.F15F6_RFE_RFE_id,
+    to_date(sysdate),
+    V('P1_LAB_EMP'));
+END;
+/
+
+
+drop sequence contact_seq;
+create sequence contact_seq
+start with 100
+increment by 1
+nomaxvalue;
+
+create view F15F6_Contact_view as 
+SELECT 
+    contact_id,
+    F15F6_RFE_RFE_id,
+    F15F6_emp_emp_id,
+    F15F6_role_code_id,
+    effective_date,
+    comments
+FROM F15F6_Contact;
+
+create or replace TRIGGER F15F6_Contact_trigger
+    INSTEAD OF insert ON F15F6_Contact_view
+    DECLARE
+        conid NUMBER;
+BEGIN
+    conid := contact_seq.nextval;
+    insert into F15F6_Contact(
+    contact_id,
+    F15F6_RFE_RFE_id,
+    F15F6_emp_emp_id,
+    F15F6_role_code_id,
+    effective_date,
+    comments) VALUES(
+    conid,
+    V('P19_F15F6_RFE_RFE_ID'),
+    V('P19_F15F6_EMP_EMP_ID'),
+    V('P19_F15F6_ROLE_CODE_ID'),
+    :NEW.effective_date,
+    :NEW.comments);
+END;
+/
+
