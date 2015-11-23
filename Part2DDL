@@ -1,4 +1,4 @@
-# Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
+#  prod_categ.neo4j.formatted.txt Change the followin oracle account id and password to your oracle account id and password. Also, change A0 to your group's number but don't use F15 because it will make some internal names be too long.
 conn = connectTo 'jdbc:oracle:thin:@sayonara.microlab.cs.utexas.edu:1521:orcl' 'C##cs347_zdb248' 'orcl_zdb248' 'rdf_mode' 'F6';
 
 Neo4j on conn "CREATE (:product { PRODUCT_ID : 1, CATEGORY_ID : 1, PRODUCT_CODE : 'STRAT', PRODUCT_NAME : 'FENDER STRATOCASTER', LIST_PRICE : 699, DISCOUNT_PERCENT : 30, DATE_ADDED : '2011-10-30'})"
